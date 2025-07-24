@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าของเรา - เว็บสำเร็จรูป</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Sarabun', sans-serif;
+      background: linear-gradient(180deg, #fffaf0 0%, #ffe8e8 100%);
+      color: #333;
+    }
+    header {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    .product {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background: #f5f5f5;
+    }
+    .product h2 {
+      font-size: 1.4em;
+      margin: 16px 10px 8px;
+      color: #d62828;
+    }
+    .product p {
+      font-size: 1em;
+      padding: 0 10px 20px;
+      color: #666;
+    }
+    .sample-link {
+      display: block;
+      text-align: center;
+      margin: 60px 0 20px;
+    }
+    .sample-link a {
+      background-color: #3a86ff;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .sample-link a:hover {
+      background-color: #265df2;
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #ff6b6b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95em;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .product h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>สินค้าของเรา</h1>
+    <p>เว็บไซต์สำเร็จรูป พร้อมใช้งาน โหลดเร็ว ติด Google</p>
+  </header>
+
+  <main>
+    <div class="products">
+      <div class="product">
+        <img src="product1.jpeg" alt="ชามสีเหลือง">
+        <h2>ชามสีเหลือง</h2>
+        <p>ภาชนะทรงกลม สีสดใส ใช้ใส่อาหารหรือของใช้ต่าง ๆ</p>
+      </div>
+      <div class="product">
+        <img src="product2.jpeg" alt="ผ้าพับหลายสี">
+        <h2>ผ้าพับหลากสี</h2>
+        <p>ผ้าคุณภาพดี เหมาะสำหรับใช้ในบ้านหรือร้านค้า</p>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="กล่องกระดาษสีฟ้า">
+        <h2>กล่องกระดาษสีฟ้า</h2>
+        <p>กล่องแนวเรียบง่าย โทนสีฟ้า สำหรับจัดเก็บหรือจัดส่งสินค้า</p>
+      </div>
+      <div class="product">
+        <img src="product4.png" alt="ไอคอนระบบออนไลน์">
+        <h2>ระบบออนไลน์</h2>
+        <p>เหมาะสำหรับแสดงระบบเชื่อมต่อเว็บไซต์ อินเทอร์เน็ต และอุปกรณ์ต่าง ๆ</p>
+      </div>
+      <div class="product">
+        <img src="product5.png" alt="มาสคาร่า">
+        <h2>มาสคาร่า</h2>
+        <p>มาสคาร่าใช้งานง่าย สีชมพูหวาน สำหรับตกแต่งขนตา</p>
+      </div>
+      <div class="product">
+        <img src="product7.jpeg" alt="เซ็ตเครื่องสำอางแบบวาด">
+        <h2>เซ็ตเครื่องสำอาง</h2>
+        <p>รวมอุปกรณ์แต่งหน้าแบบการ์ตูน น่ารัก สีสันสดใส</p>
+      </div>
+    </div>
+
+    <div class="sample-link">
+      <a href="https://line.me/ti/p/VY_VF9LMvy">สนใจหน้าเว็บตัวอย่างนี้</a>
+    </div>
+  </main>
+
+  <footer>
+    เครดิต &copy; รับทำเว็บไซต์ เว็บสำเร็จรูปพร้อมใช้ ติด Google
+  </footer>
+</body>
+</html>
